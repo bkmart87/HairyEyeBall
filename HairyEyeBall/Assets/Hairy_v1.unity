@@ -3701,7 +3701,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gravity: -25
-  runSpeed: 6
+  runSpeed: 3
   groundDamping: 10
   inAirDamping: 5
   jumpHeight: 1.70000005
@@ -3799,7 +3799,7 @@ Transform:
   m_PrefabInternal: {fileID: 1435186935}
   m_GameObject: {fileID: 558698019}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.5999985, y: 5.30000019, z: 0}
+  m_LocalPosition: {x: -7.96999979, y: 4.42999983, z: 0}
   m_LocalScale: {x: .920000196, y: .920000196, z: .920000196}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4601,6 +4601,7 @@ GameObject:
   - 92: {fileID: 671883921}
   - 124: {fileID: 671883920}
   - 81: {fileID: 671883919}
+  - 114: {fileID: 671883924}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4668,11 +4669,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 671883918}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 86.4000015, y: 3.9000001, z: -10.6999998}
+  m_LocalPosition: {x: -4.48999977, y: 3.9000001, z: -10.6999998}
   m_LocalScale: {x: 1.34994805, y: .674974859, z: 1.34994769}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!114 &671883924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 671883918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bae6acbe791f4fd087656158804a006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 558698026}
+  offset: {x: 5.03999996, y: 0, z: -4.07999992}
 --- !u!1 &689204579
 GameObject:
   m_ObjectHideFlags: 0
@@ -10384,11 +10398,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 496258, guid: fe76035aad4e5484d9fabdbf78100f79, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 83.5999985
+      value: -7.96999979
       objectReference: {fileID: 0}
     - target: {fileID: 496258, guid: fe76035aad4e5484d9fabdbf78100f79, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.30000019
+      value: 4.42999983
       objectReference: {fileID: 0}
     - target: {fileID: 496258, guid: fe76035aad4e5484d9fabdbf78100f79, type: 2}
       propertyPath: m_LocalPosition.z
@@ -10437,7 +10451,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11496258, guid: fe76035aad4e5484d9fabdbf78100f79, type: 2}
       propertyPath: runSpeed
-      value: 6
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 11496258, guid: fe76035aad4e5484d9fabdbf78100f79, type: 2}
       propertyPath: groundDamping
